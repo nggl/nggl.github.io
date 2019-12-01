@@ -12,10 +12,16 @@ new Vue({
 			pro: '计算机科学',
 		}],
 		expiress: [{
+			name: '长沙云中科科技公司',
+			worker: 'web前端',
+			wages: '7k',
+			time: '2019.10-至今',
+			tip: '小程序(原生，包含有字节跳动，微信小程序)、公众号、混合app开发',
+			}, {
 			name: '湖南省信书信息科技有限公司',
 			worker: 'web前端',
 			wages: '6k',
-			time: '2019.05-现在',
+			time: '2019.05-2019.09',
 			tip: '使用uni-app框架进行项目开发；使用Less规范进行样式编写；JavaScript代码规范采用ES5和ES6混合的面向过程风格；项目使用Vue组件化规范。',
 			}, {
 			name: '时刻未来教育科技有限公司',
@@ -23,16 +29,10 @@ new Vue({
 			wages: '5-7k',
 			time: '2018.11-2019.04',
 			tip: '使用uni-app框架和vue-cli进行项目开发；使用Element-ui进行后台管理系统的搭建；使用Less规范进行样式编写；JavaScript代码规范采用ES5和ES6混合的面向过程风格；组件化页面编写、前端路由。',
-			}, {
-			name: '湖南卓景京信息技术有限公司',
-			worker: 'web前端',
-			wages: '4-5k',
-			time: '2018.07-2018.10',
-			tip: '使用jQuery和vue.js进行项目的数据请求、渲染和操作；使用mui、bootstrap和bootstrap-table进行移动端和pc版项目的静态页面编写',
 		}],
 		projects: [{
 			name: '信书分享h5和小程序',
-			time: '2019.05-现在',
+			time: '2019.05-2019.09',
 			woker: 'web前端',
 			tip: '使用uni-app框架进行项目的搭建；使用Less规范进行样式编写；使用uni-app提供的全平台兼容的UI框架。',
 			urls: [{
