@@ -35,10 +35,10 @@ new Vue({
 			time: '2019.05-2019.09',
 			woker: 'web前端',
 			tip: '使用uni-app框架进行项目的搭建；使用Less规范进行样式编写；使用uni-app提供的全平台兼容的UI框架。',
-			urls: [{
+			/*urls: [{
 				name: 'h5在线',
 				url: 'https://m.ngfrankgl.cn',
-			}],
+			}],*/
 			}, {
 			name: '学成教育',
 			time: '2018.11-2019.04',
@@ -56,10 +56,10 @@ new Vue({
 			time: '2019.04-2019.05',
 			woker: '全栈',
 			tip: '本科生毕业设计项目，使用原生PHP、MySQL技术，vue-cli、uni-app框架，Less规范进行项目开发；项目使用了MVVM的设计模式，灵活运用了PHP语言的变量的灵活性；项目的数据库设计不足10，涉及的业务比较清晰；主要的业务包括，用户登录、注册，用户收藏地址记录，热门城市设置第三方定位API、天气预报API使用。',
-			urls: [{
+			/*urls: [{
 				name: '后台管理',
 				url: 'https://admin.ngfrankgl.cn',
-			}],
+			}],*/
 		}],
 		userinfo: {
 			name: '赵国梁',
@@ -69,7 +69,7 @@ new Vue({
 			exp: '3年',
 			side: '长沙市开福区',
 			worker: 'web前端',
-			wages: '6k-8k',
+			wages: '8k',
 			edu: '本科',
 		},
 		tip: `有JavaScript语言基础，熟悉ES6以后版本的常用特性；
