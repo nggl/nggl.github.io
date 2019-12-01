@@ -1,1 +1,307 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<style>
+		.m,
+		.web {
+			display: none;
+		}
+		[v-cloak] {
+			display: none;
+		}
+	</style>
+	<title>简历</title>
+	<link rel="stylesheet" href="font/iconfont.css">
+	<link rel="stylesheet" href="css/index-m.css" media="screen and (max-width:640px)">
+	<link rel="stylesheet" href="css/index-web.css" media="screen and (min-width:641px)">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.0/lib/index.css">
+	<script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vant@2.0/lib/vant.min.js"></script>
+</head>
+<body>
+	<div class="app" v-cloak>
+		<!-- 移动展示内容 -->
+		<div class="m">
+			<van-swipe style="height: 100vh;" vertical @change="itemChange" :initial-swipe="0">
+				<van-swipe-item  class="one">
+					<div class="one-tt">基本介绍</div>
+					<div class="one-ct">
+						<div class="one-ct-cover">
+							<img src="./img/cover.jpg" alt="">
+						</div>
+						<div class="one-ct-info">
+							<div class="one-ct-info-row">
+								<label>姓名</label><span v-text="userinfo.name"></span>
+							</div>
+							<div class="one-ct-info-row">
+								<label>工作时间</label><span v-text="userinfo.exp"></span>
+							</div>
+							<div class="one-ct-info-row">
+								<label>目标岗位</label><span v-text="userinfo.worker"></span>
+							</div>
+							<div class="one-ct-info-row">
+								<label>联系电话</label><span v-text="userinfo.phone"></span>
+							</div>
+							<div class="one-ct-info-row">
+								<label>年龄</label><span v-text="userinfo.age"></span>
+							</div>
+							<div class="one-ct-info-row">
+								<label>学历</label><span v-text="userinfo.edu"></span>
+							</div>
+							<div class="one-ct-info-row">
+								<label>期望薪资</label><span v-text="userinfo.wages"></span>
+							</div>
+							<div class="one-ct-info-row">
+								<label>现住地址</label><span v-text="userinfo.side"></span>
+							</div>
+						</div>
+					</div>
+					<div class="one-ft">
+						<div class="one-ft-edu" v-for="(value, index) in edu" :key=index>
+							<div class="one-ft-edu-row">
+								<strong>学校名称</strong>
+								<span v-text="value.schoolName"></span>
+							</div>
+							<div class="one-ft-edu-row">
+								<strong>学习时间</strong>
+								<span v-text="value.time"></span>
+							</div>
+							<div class="one-ft-edu-row">
+								<strong>所学专业</strong>
+							<span v-text="value.pro"></span>
+							</div>
+						</div>
+					</div>
+				</van-swipe-item>
+
+				<van-swipe-item class="two">
+					<h3>个人评价</h3>
+					<p v-for="(value, index) in mTip" :key="index" v-text="index + 1 + '，' + value"></p>
+				</van-swipe-item>
+
+				<van-swipe-item class="three">
+				  <h3>工作经历</h3>
+				  <div class="three-row" v-for="(value, index) in expiress" :key="index">
+				  	<div class="three-row-company">
+				  		<strong>公司名称</strong>
+				  		<span v-text="value.name"></span>
+				  	</div>
+				  	<div class="three-row-info">
+				  		<div class="three-row-info-col">
+				  			<strong>职位</strong>
+				  			<span v-text="value.worker"></span>
+				  		</div>
+				  		<div class="three-row-info-col">
+				  			<strong>工作时间</strong>
+				  			<span v-text="value.time"></span>
+				  		</div>
+				  		<div class="three-row-info-col">
+				  			<strong>薪资</strong>
+				  			<span v-text="value.wages"></span>
+				  		</div>
+				  	</div>
+				  	<div class="three-row-tip">
+				  		<strong>岗位描述</strong>
+				  		<p v-text="value.tip"></p>
+				  	</div>
+				  </div>
+				</van-swipe-item>
+				
+				<van-swipe-item class="four">
+					<h3>项目经验</h3>
+					<div class="four-row" v-for="(value, index) in projects" :key="index">
+						<div class="four-row-name">
+							<strong>项目名称</strong><span v-text="value.name"></span>
+						</div>
+						<div class="four-row-join">
+							<div class="four-row-join-col">
+								<strong>参与岗位</strong><span v-text="value.woker"></span>
+							</div>
+							<div class="four-row-join-col">
+								<strong>开发周期</strong><span v-text="value.time"></span>
+							</div>
+						</div>
+						<div class="four-row-tip">
+							<strong>工作职能</strong>
+							<p v-text="value.tip"></p>
+						</div>
+					</div>
+				</van-swipe-item>
+			</van-swipe>
+		</div>
+		<!-- PC展示内容 -->
+		<div class="web">
+			<div class="web-hd">
+				<div class="ps">
+					<div class="ps-delta-left"></div>
+					<div class="ps-delta-right"></div>
+					<div class="ps-row"></div>
+				</div>
+				<div class="img"><img src="img/cover.jpg" alt=""></div>
+				<div class="info">
+					<strong>个人信息</strong>
+					<div class="info-row">
+						<div class="info-row-col">
+							<i class="iconfont icon-me"></i>
+							<strong>姓名</strong>:
+							<span v-text="userinfo.name"></span>
+						</div>
+						<div class="info-row-col">
+							<i class="iconfont icon-age"></i>
+							<strong>年龄</strong>:
+							<span v-text="userinfo.age"></span>
+						</div>
+					</div>
+					<div class="info-row">
+						<div class="info-row-col">
+							<i class="iconfont icon-phone"></i>
+							<strong>电话</strong>:
+							<span v-text="userinfo.phone"></span>
+						</div>
+						<div class="info-row-col">
+							<i class="iconfont icon-msg"></i>
+							<strong>邮箱</strong>:
+							<span v-text="userinfo.mail"></span>
+						</div>
+					</div>
+					<div class="info-row">
+						<div class="info-row-col">
+							<i class="iconfont icon-exp"></i>
+							<strong>工作经验</strong>:
+							<span v-text="userinfo.exp"></span>
+						</div>
+						<div class="info-row-col">
+							<i class="iconfont icon-side"></i>
+							<strong>现住城市</strong>:
+							<span v-text="userinfo.side"></span>
+						</div>
+					</div>
+					<div class="info-row">
+						<div class="info-row-col">
+							<strong>求职意向</strong>:
+							<span>web前端</span>
+						</div>
+						<div class="info-row-col">
+							<strong>期望月薪</strong>:
+							<span>6-8k</span>
+						</div>
+					</div>
+					<div class="info-row">
+						<div class="info-row-col">
+							<strong>学历</strong>:
+							<span>本科</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="web-ct">
+				<div class="web-ct-nav">
+					<div class="web-ct-nav-row row1">教育背景</div>
+					<div class="web-ct-nav-row row2"></div>
+					<div class="web-ct-nav-row row3"></div>
+				</div>
+				<div class="web-ct-box">
+					<template v-for="(value, index) in edu" :key="index">
+					<div class="web-ct-box-row">
+						<div class="web-ct-box-col">
+							<strong>学校名称</strong>：
+							<span v-text="value.schoolName"></span>
+						</div>
+						<div class="web-ct-box-col">
+							<strong>就读时间</strong>：
+							<span v-text="value.time"></span>
+						</div>
+						<div class="web-ct-box-col">
+							<strong>所学专业</strong>：
+							<span v-text="value.pro"></span>
+						</div>
+					</div>
+					</template>
+				</div>
+
+				<div class="web-ct-nav">
+					<div class="web-ct-nav-row row1">工作经历</div>
+					<div class="web-ct-nav-row row2"></div>
+					<div class="web-ct-nav-row row3"></div>
+				</div>
+				<div class="web-ct-box">
+					<template v-for="(value, index) in expiress" :key="index">
+						<div class="web-ct-box-row">
+							<div class="web-ct-box-col web-col">
+								<strong>公司名称</strong>：
+								<span v-text="value.name"></span>
+							</div>
+							<div class="web-ct-box-col web-col">
+								<strong>职位名称</strong>：
+								<span v-text="value.worker"></span>
+							</div>
+							<div class="web-ct-box-col web-col">
+								<strong>在职时间</strong>：
+								<span v-text="value.time"></span>
+							</div>
+							<div class="web-ct-box-col web-col">
+								<strong>薪资</strong>：
+								<span v-text="value.wages"></span>
+							</div>
+						</div>
+						<div class="web-ct-box-row paragraph">
+							<p>
+								<strong>工作描述：</strong>{{value.tip}}
+							</p>
+						</div>
+					</template>
+				</div>
+
+				<div class="web-ct-nav">
+					<div class="web-ct-nav-row row1">项目经验</div>
+					<div class="web-ct-nav-row row2"></div>
+					<div class="web-ct-nav-row row3"></div>
+				</div>
+				<div class="web-ct-box">
+					<template v-for="(value, index) in projects" :key="index">
+					<div class="web-ct-box-row">
+						<div class="web-ct-box-col">
+							<strong>项目名称</strong>：
+							<span v-text="value.name"></span>
+						</div>
+						<div class="web-ct-box-col">
+							<strong>项目时间</strong>：
+							<span v-text="value.time"></span>
+						</div>
+						<div class="web-ct-box-col">
+							<strong>项目职位</strong>：
+							<span v-text="value.woker"></span>
+						</div>
+					</div>
+					<div class="web-ct-box-row paragraph">
+						<p>
+							<strong>项目描述：</strong>{{value.tip}}
+						</p>
+						<div class="link">
+							<template v-for="(val, ind) in value.urls" :key="ind">
+								<a :href="val.url" v-text="val.name" target="_blank"></a>
+							</template>
+						</div>
+					</div>
+					</template>
+				</div>
+				
+				<div class="web-ct-nav">
+					<div class="web-ct-nav-row row1">自我评价</div>
+					<div class="web-ct-nav-row row2"></div>
+					<div class="web-ct-nav-row row3"></div>
+				</div>
+				<div class="web-ct-box">
+					<div class="paragraph" v-text="tip">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="./js/index.js"></script>
+</body>
+</html>

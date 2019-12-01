@@ -1,0 +1,172 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+div {
+  box-sizing: border-box;
+}
+.m {
+  display: block;
+  color: #f2f1ef;
+}
+.m .van-swipe-item {
+  background-color: #F5F5F5;
+  padding: 0 20px;
+}
+.m .van-swipe-item:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.m .van-swipe__indicators--vertical,
+.m .van-swipe__indicators {
+  right: 10px;
+  left: auto;
+}
+.m .van-swipe__indicator {
+  opacity: 1;
+  background-color: #fff;
+}
+.m .van-swipe__indicator--active {
+  background-color: #1989fa;
+}
+.one-tt {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+}
+.one-ct {
+  display: flex;
+}
+.one-ct img {
+  width: 140px;
+  border-radius: 8px;
+}
+.one-ct-info {
+  padding: 0 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.one-ct-info-row {
+  display: flex;
+  align-items: baseline;
+  font-size: 14px;
+}
+.one-ct-info-row label {
+  width: 4.2em;
+  text-align: justify;
+  text-align-last: justify;
+  color: #999;
+  margin-right: 4px;
+  white-space: nowrap;
+}
+.one-ct-info-row span {
+  color: #666;
+  flex: 1;
+}
+.one-ft {
+  column-count: 2;
+  column-gap: 10px;
+  column-rule: 1px dashed #ddd;
+}
+.one-ft-edu {
+  font-size: 14px;
+  break-inside: avoid;
+}
+.one-ft-edu strong {
+  color: #666;
+  padding: 4px 0;
+}
+.one-ft-edu span {
+  color: #333;
+  padding: 2px 0;
+}
+.one-ft-edu-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 0;
+}
+.two {
+  color: #333;
+  font-size: 14px;
+}
+.two p {
+  text-align: justify;
+  padding: 0 10px;
+}
+.three {
+  color: #333;
+  font-size: 14px;
+}
+.three-row {
+  margin-bottom: 8px;
+  background-color: #fff;
+  padding: 8px 10px;
+  border-radius: 12px;
+}
+.three-row strong {
+  font-size: 12px;
+  color: #666;
+}
+.three-row p {
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+  line-height: 20px;
+}
+.three-row-info {
+  display: flex;
+  padding: 8px 0;
+}
+.three-row-info-col {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.three-row-info-col:nth-of-type(2) {
+  flex: 1;
+}
+.three-row-info-col strong {
+  margin-right: 2px;
+}
+.four {
+  color: #333;
+  font-size: 14px;
+}
+.four p {
+  padding: 0;
+  margin: 0;
+  text-indent: 2em;
+  font-size: 12px;
+  line-height: 20px;
+}
+.four strong,
+.four span {
+  white-space: nowrap;
+}
+.four strong {
+  font-size: 12px;
+  color: #666;
+  margin-right: 4px;
+}
+.four-row {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+}
+.four-row-name,
+.four-row-join-col,
+.four-row-join {
+  display: flex;
+  align-items: baseline;
+}
+.four-row-join {
+  padding: 6px 0;
+}
+.four-row-join-col {
+  flex: 1;
+}
