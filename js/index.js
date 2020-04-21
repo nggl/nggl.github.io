@@ -67,16 +67,19 @@ new Vue({
 			phone: '13135140441',
 			mail: '845014705@qq.com',
 			exp: '3年',
-			side: '长沙市开福区',
+			side: '长沙市岳麓区区',
 			worker: 'web前端',
-			wages: '8k',
+			wages: '9k',
 			edu: '本科',
 		},
 		tip: `有JavaScript语言基础，熟悉ES6以后版本的常用特性；
-				掌握HTML5和CSS3并且满足一般项目需求；
-				熟练使用vue前端框架，了解常用的UI框架有，element-ui，mint-ui，vant，layui，bootstrap等，更为习惯自己利用less手写页面效果；
-				uniapp开发小程序，Android app，h5相关的开发规范；
+				掌握HTML5和CSS3并且满足一般项目需求，包括有，弹性布局、网格布局等；
+				熟练并且能够使用vue前端框架，熟悉React特性，实际上没有工作上的需求；
+				熟悉的后台管理系统UI框架有，element-ui，iview，layui，bootstrap，前端UI框架有，mint-ui，vant；
+				习惯通过less和原生css手写样式效果；
+				使用uniapp和h5+api开发混合app；
 				熟悉nodejs，mangodb，MySQL，PHP并且能够编写一些简单的全栈项目；
+				能够精炼语言，提高代码的可读性和可复用性；
 				能够使用PS进行修图，切图等一般操作和简单的排版；
 				能够协同工作，完成项目需求，代码编写较为严谨，生活乐观`,
 	},
