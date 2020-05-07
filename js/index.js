@@ -67,7 +67,7 @@ new Vue({
 			phone: '13135140441',
 			mail: '845014705@qq.com',
 			exp: '3年',
-			side: '长沙市岳麓区区',
+			side: '长沙市岳麓区',
 			worker: 'web前端',
 			wages: '9k',
 			edu: '本科',
@@ -85,7 +85,7 @@ new Vue({
 	},
 	methods: {
 		itemChange(itemIndex) {
-			console.log(itemIndex)
+			// console.log(itemIndex)
 			this.swipeIndex = itemIndex
 		},
 	},
