@@ -83,7 +83,9 @@
 
 				<van-swipe-item class="two">
 					<h3>个人评价</h3>
-					<p v-for="(value, index) in mTip" :key="index" v-text="index + 1 + '，' + value"></p>
+					<template v-for="(value, index) in mTip">
+						<div :key="index" v-text="index + 1 + '，' + value"></div>
+					</template>
 				</van-swipe-item>
 
 				<van-swipe-item class="three">
@@ -186,7 +188,7 @@
 					<div class="info-row">
 						<div class="info-row-col">
 							<strong>求职意向</strong>:
-							<span>web前端</span>
+							<span v-text="userinfo.worker"></span>
 						</div>
 						<div class="info-row-col">
 							<strong>期望月薪</strong>:
@@ -225,7 +227,6 @@
 					</div>
 					</template>
 				</div>
-
 				<div class="web-ct-nav">
 					<div class="web-ct-nav-row row1">工作经历</div>
 					<div class="web-ct-nav-row row2"></div>
@@ -258,7 +259,6 @@
 						</div>
 					</template>
 				</div>
-
 				<div class="web-ct-nav">
 					<div class="web-ct-nav-row row1">项目经验</div>
 					<div class="web-ct-nav-row row2"></div>
@@ -292,16 +292,16 @@
 					</div>
 					</template>
 				</div>
-				
 				<div class="web-ct-nav">
 					<div class="web-ct-nav-row row1">自我评价</div>
 					<div class="web-ct-nav-row row2"></div>
 					<div class="web-ct-nav-row row3"></div>
 				</div>
 				<div class="web-ct-box">
-					<div class="paragraph" v-text="tip">
-						
-					</div>
+					<!-- <div class="paragraph" v-text="tip"></div> -->
+					<template v-for="(value, index) in mTip">
+						<div class="paragraph" :key="index" v-text="index + 1 + '，' + value"></div>
+					</template>
 				</div>
 			</div>
 		</div>

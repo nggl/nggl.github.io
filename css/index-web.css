@@ -9,11 +9,11 @@ div {
   display: block;
   width: 840px;
   padding: 6px;
-  background-color: #e0dfdd;
+  /*background-color: #e0dfdd;*/
   font-size: 14px;
-  margin: 20px auto 0;
+  margin: 20px auto 10px;
   padding: 12px 6px;
-  box-shadow: 0 0 3px 1px #ddd;
+  box-shadow: 1px 1px 6px 0 #efefef;
 }
 .web-hd {
   padding: 24px 12px 8px;
