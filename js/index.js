@@ -7,24 +7,24 @@ new Vue({
 				schoolName: '吉首大学',
 				time: '2016.09-2018.07',
 				pro: '计算机科学与技术',
-			}, {
+			}/*, {
 				schoolName: '湖南软件职业学院',
 				time: '2013.09-2016.07',
 				pro: '计算机科学',
-			}
+			}*/
 		],
 		expiress: [
 			{
 				name: '湖南云木网络科技有限公司',
 				worker: '前端',
-				wages: '8k',
-				time: '2020.10-2021.09',
+				// wages: '8k',
+				time: '2020.10-2021.07',
 				tip: '通过uniapp框架，开发ios和android应用',
 			}, 
 			{
 				name: '长沙云中科科技公司',
 				worker: '前端工程师',
-				wages: '7k',
+				// wages: '7k',
 				time: '2019.07-2020.09',
 				tip: '小程序(原生，包含有字节跳动，微信小程序)、公众号、混合app开发',
 			}, /*{
@@ -36,7 +36,7 @@ new Vue({
 			}, */{
 				name: '时刻未来教育科技有限公司',
 				worker: 'web前端',
-				wages: '5k',
+				// wages: '5k',
 				time: '2018.11-2019.04',
 				// tip: '使用uni-app框架和vue-cli进行项目开发；使用Element-ui进行后台管理系统的搭建；使用Less规范进行样式编写；JavaScript代码规范采用ES5和ES6混合的面向过程风格；组件化页面编写、前端路由。',
 				tip: '使用h5+css的形式进行页面编写，负责web和h5，js库用到了vue.js和jquery',
@@ -69,22 +69,22 @@ new Vue({
 				woker: 'web前端',
 				// tip: '线上教育平台学程，一套从管理、pc版和移动版的项目；后台使用了Hui框架结合jQuery进行开发；pc站项目使用vue.js、jQuery和layui进行编写；移动版使用vue组件化开发，没有使用vue-cli编写的第一版是陪伴项目，pc和移动版均为前后台分离模式进行开发，项目第二版移动版(客户需要)，采用更为精致的UI图纸进行项目开发(uni-app)。',
 				tip: '线上教育平台，负责前后台项目，使用传统的jQuery形式行进开发，后台管理系统使用asp技术，负责静态页面编写',
-				urls: [{
+				/*urls: [{
 					name: 'pc版',
 					url: 'http://www.szxcedu.com.cn',
 				}, {
 					name: '移动版',
 					url: 'http://m.szxcedu.com.cn',
-				}],
+				}],*/
 			}, {
 				name: '上海丸旭',
 				time: '2019.04-2019.05',
 				woker: '前端',
 				tip: 'web项目，企业官网，负责前端的网页（静态页面）编写，后台使用ThinkPHP框架',
-				urls: [{
+				/*urls: [{
 					name: '官方网站',
 					url: 'http://www.maruhi.com.cn/zh/',
-				}],
+				}],*/
 			}
 			/*{
 				name: '基于Android天气预报app',
@@ -106,19 +106,19 @@ new Vue({
 			exp: '4年',
 			side: '长沙市岳麓区',
 			worker: '前端工程师',
-			wages: '14k',
+			wages: '12k',
 			edu: '本科',
 		},
 		tip: `
 		掌握HTML5和CSS3，CSS3用到的布局是弹性布局，了解网格和多列布局；
-		懂JavaScript基础，熟练使用ES6以后版本的常用语法特性；
-		熟悉的UI框架，element-ui，iview，layui，vant；
-		掌握当前主流框架Vue.js，熟悉vue全家桶；
+		懂JavaScript基础，熟练使用ES6及后期版本的语法特性；
+		掌握当前主流框架Vue.js，熟练使用vuex, vue-router；
 		熟悉React（web方向），掌握jsx语法；
-		可以原生开发微信小程序，会使用uniapp实现一套代码多个平台；
+		熟悉的UI框架，element-ui，iview，layui，vant；
+		熟练使用原生方式开发微信小程序，也熟练使用uniapp实现一套代码多个平台；
 		熟练使用PS进行修图、切图等常规操作，熟悉git和svn代码托管工具；
 		扩展技术栈有nodejs、mangodb、MySQL、PHP、redis、Linux和docker；		
-		能够协同工作，完成项目需求，代码编写较为严谨，生活乐观`,
+		既能独立开发，又能够协同工作。可以根据项目需求，编写业务代码。掌握面向过程编程思路，生活乐观，充满正能量`,
 	},
 	methods: {
 		itemChange(itemIndex) {

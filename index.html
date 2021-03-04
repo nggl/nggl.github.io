@@ -104,7 +104,7 @@
 				  			<strong>工作时间</strong>
 				  			<span v-text="value.time"></span>
 				  		</div>
-				  		<div class="three-row-info-col">
+				  		<div class="three-row-info-col" v-if="value.wages">
 				  			<strong>薪资</strong>
 				  			<span v-text="value.wages"></span>
 				  		</div>
@@ -228,6 +228,17 @@
 					</template>
 				</div>
 				<div class="web-ct-nav">
+					<div class="web-ct-nav-row row1">自我评价</div>
+					<div class="web-ct-nav-row row2"></div>
+					<div class="web-ct-nav-row row3"></div>
+				</div>
+				<div class="web-ct-box">
+					<!-- <div class="paragraph" v-text="tip"></div> -->
+					<template v-for="(value, index) in mTip">
+						<div class="paragraph" :key="index" v-text="index + 1 + '，' + value"></div>
+					</template>
+				</div>
+				<div class="web-ct-nav">
 					<div class="web-ct-nav-row row1">工作经历</div>
 					<div class="web-ct-nav-row row2"></div>
 					<div class="web-ct-nav-row row3"></div>
@@ -244,10 +255,10 @@
 								<span v-text="value.worker"></span>
 							</div>
 							<div class="web-ct-box-col web-col">
-								<strong>在职时间</strong>：
+								<strong>就职时间</strong>：
 								<span v-text="value.time"></span>
 							</div>
-							<div class="web-ct-box-col web-col">
+							<div class="web-ct-box-col web-col" v-if="value.wages">
 								<strong>薪资</strong>：
 								<span v-text="value.wages"></span>
 							</div>
@@ -290,17 +301,6 @@
 							</template>
 						</div>
 					</div>
-					</template>
-				</div>
-				<div class="web-ct-nav">
-					<div class="web-ct-nav-row row1">自我评价</div>
-					<div class="web-ct-nav-row row2"></div>
-					<div class="web-ct-nav-row row3"></div>
-				</div>
-				<div class="web-ct-box">
-					<!-- <div class="paragraph" v-text="tip"></div> -->
-					<template v-for="(value, index) in mTip">
-						<div class="paragraph" :key="index" v-text="index + 1 + '，' + value"></div>
 					</template>
 				</div>
 			</div>
