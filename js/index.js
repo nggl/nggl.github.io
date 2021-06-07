@@ -18,7 +18,7 @@ new Vue({
 				name: '湖南省云木网络科技有限公司',
 				worker: '前端',
 				// wages: '8k',
-				time: '2020.10-2021.07',
+				time: '2020.10-2021.05',
 				tip: '通过uniapp框架，开发ios和android应用',
 			}, 
 			{
@@ -115,6 +115,7 @@ new Vue({
 		懂JavaScript基础，熟练使用ES6及后期版本的语法特性；
 		掌握当前主流框架Vue.js，熟练使用vuex, vue-router；
 		熟悉React（web方向），掌握jsx语法；
+		熟悉AngularJS，熟练使用Typescript语法；
 		熟悉的UI框架，element-ui，iview，layui，vant；
 		熟练使用原生方式开发微信小程序，也熟练使用uniapp实现一套代码多个平台；
 		熟练使用PS进行修图、切图等常规操作，熟悉git和svn代码托管工具；
