@@ -15,6 +15,13 @@ new Vue({
 		],
 		expiress: [
 			{
+				name: '湖南云简信息技术有限公司',
+				worker: '前端开发工程师',
+				// wages: '8k',
+				time: '2021.05-2021.06',
+				tip: '使用AngluarJS维护和开发ERP系统',
+			}, 
+			{
 				name: '湖南省云木网络科技有限公司',
 				worker: '前端',
 				// wages: '8k',
@@ -44,10 +51,22 @@ new Vue({
 		],
 		projects: [
 			{
+				name: '积加ERP',
+				time: '2021.05-2021.06',
+				worker: '前端',
+				tip: '使用AngluarJS框架迭代，产品是基于亚马逊平台商户的订单相关管理操作',
+			},
+			{
 				name: '换号吧',
 				time: '2020.10-2020.11',
 				worker: '前端',
 				tip: 'uniapp开发，构建android应用，一款线下游戏账号交易平台，后台管理系统和前端web使用的是JSP技术',
+			},
+			{
+				name: '热铺拓客',
+				time: '2019.12-2020.04',
+				worker: '前端工程师',
+				tip: 'VueJS管理类项目，使用vue-cli开发，是一个集商品售卖和用户管理的管理系统',
 			},
 			{
 				name: '秀吧带货',
