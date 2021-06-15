@@ -26,7 +26,7 @@ new Vue({
 				worker: '前端',
 				// wages: '8k',
 				time: '2020.10-2021.05',
-				tip: '通过uniapp框架，开发ios和android应用',
+				tip: '通过uniapp框架，开发android应用',
 			}, 
 			{
 				name: '湖南中网科技有限公司',
@@ -46,7 +46,7 @@ new Vue({
 				// wages: '5k',
 				time: '2018.07-2019.03',
 				// tip: '使用uni-app框架和vue-cli进行项目开发；使用Element-ui进行后台管理系统的搭建；使用Less规范进行样式编写；JavaScript代码规范采用ES5和ES6混合的面向过程风格；组件化页面编写、前端路由。',
-				tip: '使用h5+css的形式进行页面编写，负责web和h5，js库用到了vue.js和jquery',
+				tip: '通过div+css的形式进行页面编写，负责web和移动web，使用jQuery库',
 			}
 		],
 		projects: [
@@ -54,25 +54,25 @@ new Vue({
 				name: '积加ERP',
 				time: '2021.05-2021.06',
 				worker: '前端',
-				tip: '使用AngluarJS框架迭代，产品是基于亚马逊平台商户的订单相关管理操作',
+				tip: '使用AngluarJS框架，产品是基于亚马逊平台商户端的管理系统',
 			},
 			{
 				name: '换号吧',
 				time: '2020.10-2020.11',
 				worker: '前端',
-				tip: 'uniapp开发，构建android应用，一款线下游戏账号交易平台，后台管理系统和前端web使用的是JSP技术',
+				tip: 'uniapp开发android应用，一款线下游戏账号交易平台',
 			},
 			{
 				name: '热铺拓客',
 				time: '2019.12-2020.04',
 				worker: '前端工程师',
-				tip: 'VueJS管理类项目，使用vue-cli开发，是一个集商品售卖和用户管理的管理系统',
+				tip: 'Vue.js项目，使用vue-cli开发，是一个集商品、订单和用户的管理系统',
 			},
 			{
 				name: '秀吧带货',
 				time: '2019.07-2019.12',
 				worker: '前端工程师',
-				tip: '原生微信小程序，标准化的编写，使用了es6语法和weapp小程序ui组件',
+				tip: '原生微信小程序，标准化的编写，使用了weapp-ui组件和部分ES6语法',
 			},/*{
 				name: '信书分享h5和小程序',
 				time: '2019.05-2019.07',
@@ -87,7 +87,7 @@ new Vue({
 				time: '2018.07-2019.03',
 				worker: 'web前端',
 				// tip: '线上教育平台学程，一套从管理、pc版和移动版的项目；后台使用了Hui框架结合jQuery进行开发；pc站项目使用vue.js、jQuery和layui进行编写；移动版使用vue组件化开发，没有使用vue-cli编写的第一版是陪伴项目，pc和移动版均为前后台分离模式进行开发，项目第二版移动版(客户需要)，采用更为精致的UI图纸进行项目开发(uni-app)。',
-				tip: '线上教育平台，负责前后台项目，使用传统的jQuery形式行进开发，后台管理系统使用asp技术，负责静态页面编写',
+				tip: '线上教育平台，负责前、后端静态页面编写，使用jQuery渲染数据和页面交互',
 				/*urls: [{
 					name: 'pc版',
 					url: 'http://www.szxcedu.com.cn',
@@ -99,7 +99,7 @@ new Vue({
 				name: '上海丸旭',
 				time: '2018.11-2018.11',
 				worker: 'web前端',
-				tip: 'web项目，企业官网，负责前端的网页（静态页面）编写，后台使用ThinkPHP框架',
+				tip: 'web项目，企业官网，负责前端静态页面编写',
 				/*urls: [{
 					name: '官方网站',
 					url: 'http://www.maruhi.com.cn/zh/',
@@ -134,12 +134,12 @@ new Vue({
 		懂JavaScript基础，熟练使用ES6及后期版本的语法特性；
 		掌握当前主流框架Vue.js，熟练使用vuex, vue-router；
 		熟悉React（web方向），掌握jsx语法；
-		熟悉AngularJS，熟练使用Typescript语法；
+		熟悉AngularJS，熟练使用TypeScript；
 		熟悉的UI框架，element-ui，iview，layui，vant；
 		熟练使用原生方式开发微信小程序，也熟练使用uniapp实现一套代码多个平台；
 		熟练使用PS进行修图、切图等常规操作，熟悉git和svn代码托管工具；
 		扩展技术栈有nodejs、mangodb、MySQL、PHP、redis、Linux和docker；		
-		既能独立开发，又能够协同工作。可以根据项目需求，编写业务代码。掌握面向过程编程思路，生活乐观，充满正能量`,
+		既能独立开发，又能够协同工作。应项目需求，编写业务代码。掌握面向过程编程思想，生活乐观，充满正能量`,
 	},
 	methods: {
 		itemChange(itemIndex) {

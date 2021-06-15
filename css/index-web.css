@@ -187,7 +187,7 @@ div {
   transform: scaleX(0.5) translateX(50%);
 }
 .paragraph {
-  line-height: 22px;
+  line-height: 16px;
   text-align: justify;
   margin-bottom: 12px;
   color: #758092;
