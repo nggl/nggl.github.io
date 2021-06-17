@@ -14,26 +14,26 @@ new Vue({
 			}*/
 		],
 		expiress: [
-			{
+			/*{
 				name: '湖南云简信息技术有限公司',
 				worker: '前端开发工程师',
 				// wages: '8k',
 				time: '2021.05-2021.06',
 				tip: '使用AngluarJS维护和开发ERP系统',
-			}, 
+			}, */
 			{
 				name: '湖南省云木网络科技有限公司',
 				worker: '前端',
 				// wages: '8k',
 				time: '2020.10-2021.05',
-				tip: '通过uniapp框架，开发android应用',
+				tip: '通过uniapp框架，开发android应用。使用了uview uniapp的ui框架，进行开发',
 			}, 
 			{
 				name: '湖南中网科技有限公司',
 				worker: '前端工程师',
 				// wages: '7k',
 				time: '2019.07-2020.09',
-				tip: '小程序(原生，包含有字节跳动，微信小程序)、公众号、混合app开发',
+				tip: '小程序(原生，包含有字节跳动，微信小程序)、公众号和混合app开发。',
 			}, /*{
 				name: '湖南省信书信息科技有限公司',
 				worker: 'web前端',
@@ -50,15 +50,15 @@ new Vue({
 			}
 		],
 		projects: [
-			{
+			/*{
 				name: '积加ERP',
 				time: '2021.05-2021.06',
 				worker: '前端',
 				tip: '使用AngluarJS框架，产品是基于亚马逊平台商户端的管理系统',
-			},
+			},*/
 			{
 				name: '换号吧',
-				time: '2020.10-2020.11',
+				time: '2020.10-2020.12',
 				worker: '前端',
 				tip: 'uniapp开发android应用，一款线下游戏账号交易平台',
 			},
