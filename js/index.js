@@ -14,13 +14,20 @@ new Vue({
 			}*/
 		],
 		expiress: [
-			/*{
+			{
+				name: '海通安恒ITL',
+				worker: '前端开发工程师',
+				// wages: '8k',
+				time: '2021.06-2021.07',
+				tip: '使用vue.js和vue-cli开发《海通安恒人事资源系统软件的项目开发》',
+			}, 
+			{
 				name: '湖南云简信息技术有限公司',
 				worker: '前端开发工程师',
 				// wages: '8k',
 				time: '2021.05-2021.06',
 				tip: '使用AngluarJS维护和开发ERP系统',
-			}, */
+			}, 
 			{
 				name: '湖南省云木网络科技有限公司',
 				worker: '前端',
@@ -40,14 +47,14 @@ new Vue({
 				wages: '6k',
 				time: '2019.04-2019.07',
 				tip: '使用uni-app框架进行项目开发；使用Less规范进行样式编写；JavaScript代码规范采用ES5和ES6混合的面向过程风格；项目使用Vue组件化规范。',
-			}, */{
+			}, *//*{
 				name: '湖南时刻未来教育科技有限公司',
 				worker: 'web前端',
 				// wages: '5k',
 				time: '2018.07-2019.03',
 				// tip: '使用uni-app框架和vue-cli进行项目开发；使用Element-ui进行后台管理系统的搭建；使用Less规范进行样式编写；JavaScript代码规范采用ES5和ES6混合的面向过程风格；组件化页面编写、前端路由。',
 				tip: '通过div+css的形式进行页面编写，负责web和移动web，使用jQuery库',
-			}
+			}*/
 		],
 		projects: [
 			/*{
