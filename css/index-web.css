@@ -187,7 +187,7 @@ div {
   transform: scaleX(0.5) translateX(50%);
 }
 .paragraph {
-  line-height: 16px;
+  line-height: 18px;
   text-align: justify;
   margin-bottom: 12px;
   color: #758092;
@@ -198,10 +198,22 @@ div {
 .paragraph p {
   padding: 0;
   margin: 0;
+  line-height: 20px;
 }
 .link {
   display: flex;
 }
 .link a {
   margin-right: 12px;
+}
+
+.sup-tip {
+  margin-top: 4px;
+  display: flex;
+}
+.sup-tip-list {
+  flex: 1;
+}
+.sup-tip-list-item {
+  margin-bottom: 4px;
 }
