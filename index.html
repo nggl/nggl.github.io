@@ -291,14 +291,26 @@
 							<span v-text="value.worker"></span>
 						</div>
 					</div>
-					<div class="web-ct-box-row paragraph">
-						<p>
-							<strong>项目描述：</strong>{{value.tip}}
-						</p>
-						<div class="link">
-							<template v-for="(val, ind) in value.urls" :key="ind">
-								<a :href="val.url" v-text="val.name" target="_blank"></a>
-							</template>
+					<div class="paragraph">
+						<div class="web-ct-box-row">
+							<p>
+								<strong>项目描述：</strong>{{value.tip}}
+							</p>
+							<div class="link">
+								<template v-for="(val, ind) in value.urls" :key="ind">
+									<a :href="val.url" v-text="val.name" target="_blank"></a>
+								</template>
+							</div>
+						</div>
+						<div v-if="value.supTips && value.supTips.length" class="sup-tip">
+							<strong>应用技术：</strong>
+							<div class="sup-tip-list">
+								<div class="sup-tip-list-item"
+								v-for="(item, index) in value.supTips" 
+								:key="'tip' + index">
+									{{item}}
+								</div>
+							</div>
 						</div>
 					</div>
 					</template>
