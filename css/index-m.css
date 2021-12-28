@@ -67,13 +67,15 @@ div {
   flex: 1;
 }
 .one-ft {
-  column-count: 2;
+  /*column-count: 2;
   column-gap: 10px;
-  column-rule: 1px dashed #ddd;
+  column-rule: 1px dashed #ddd;*/
 }
 .one-ft-edu {
   font-size: 14px;
-  break-inside: avoid;
+  /*break-inside: avoid;*/
+  display: flex;
+  justify-content: space-around;
 }
 .one-ft-edu strong {
   color: #666;

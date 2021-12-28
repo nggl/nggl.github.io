@@ -118,7 +118,7 @@
 				
 				<van-swipe-item class="four">
 					<h3>项目经验</h3>
-					<div class="four-row" v-for="(value, index) in projects" :key="index">
+					<div class="four-row" v-for="(value, index) in projects.slice(0, 5)" :key="index">
 						<div class="four-row-name">
 							<strong>项目名称</strong><span v-text="value.name"></span>
 						</div>
